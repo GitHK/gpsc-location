@@ -7,6 +7,8 @@ import android.util.Log;
 
 import com.google.android.gms.location.LocationClient;
 
+import it.neagu.locationtestalberto.H;
+
 
 public class FusedLocationService extends IntentService {
 
@@ -20,12 +22,14 @@ public class FusedLocationService extends IntentService {
 
     @Override
     protected void onHandleIntent(Intent intent) {
-        Log.d("debug", "I have a position");
         Location location = intent.getParcelableExtra(LocationClient.KEY_LOCATION_CHANGED);
         if (location != null) {
             if (location.getAccuracy() <= FusedPositionManager.ACCURACY && location.getLatitude() != 0 && location.getLatitude() != 0) {
                 // snd position to your application however you wish
-                Log.d("debug", "I have a valid position: "+ location);
+                Log.d("debug", "I [service] have a position "+ location);
+                Intent i = new Intent("it.neagu.locationtestalberto.POSITION_FOUND");
+                i.putExtra("location", H.marshall(location));
+                sendBroadcast(i);
             }
         }
     }

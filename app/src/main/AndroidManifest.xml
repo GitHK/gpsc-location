@@ -27,10 +27,18 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <receiver android:name="it.neagu.locationtestalberto.position.ValidPositionReceiver">
+            <intent-filter>
+                <action android:name="it.neagu.locationtestalberto.POSITION_FOUND"></action>
+            </intent-filter>
+        </receiver>
+
+        <service android:name="it.neagu.locationtestalberto.position.FusedLocationService"></service>
+
     </application>
 
 
-    <service android:name="it.neagu.locationtestalberto.position.FusedLocationService"></service>
 
 
 </manifest>

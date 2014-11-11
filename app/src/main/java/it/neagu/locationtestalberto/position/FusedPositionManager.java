@@ -18,8 +18,8 @@ import com.google.android.gms.location.LocationRequest;
 public class FusedPositionManager {
 
     public static int ACCURACY = 100;
-    public static int REQUEST_INTERVAL = 100; //ms
-    public static int REQUEST_INTERVAL_REGULAR = 150; //ms
+    public static int REQUEST_INTERVAL = 10000; //ms
+    public static int REQUEST_INTERVAL_REGULAR = 15000; //ms
 
     private LocationClient locationclient;
     private LocationRequest locationRequest;
