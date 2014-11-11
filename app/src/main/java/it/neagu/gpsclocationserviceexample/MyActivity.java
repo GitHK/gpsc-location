@@ -1,4 +1,4 @@
-package it.neagu.locationtestalberto;
+package it.neagu.gpsclocationserviceexample;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.view.MenuItem;
 
 import com.google.android.gms.common.ConnectionResult;
 
-import it.neagu.locationtestalberto.position.FusedPositionManager;
+import it.neagu.gpsclocationserviceexample.position.FusedPositionManager;
 
 
 public class MyActivity extends Activity {

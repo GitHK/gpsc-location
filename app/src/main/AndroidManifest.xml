@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="it.neagu.locationtestalberto" >
+    package="it.neagu.gpsclocationserviceexample" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -15,7 +15,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MyActivity"
+            android:name="it.neagu.gpsclocationserviceexample.MyActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,13 +28,13 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <receiver android:name="it.neagu.locationtestalberto.position.ValidPositionReceiver">
+        <receiver android:name="it.neagu.gpsclocationserviceexample.position.ValidPositionReceiver">
             <intent-filter>
                 <action android:name="it.neagu.locationtestalberto.POSITION_FOUND"></action>
             </intent-filter>
         </receiver>
 
-        <service android:name="it.neagu.locationtestalberto.position.FusedLocationService"></service>
+        <service android:name="it.neagu.gpsclocationserviceexample.position.FusedLocationService"></service>
 
     </application>
 

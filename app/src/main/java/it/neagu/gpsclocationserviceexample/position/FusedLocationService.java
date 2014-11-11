@@ -1,4 +1,4 @@
-package it.neagu.locationtestalberto.position;
+package it.neagu.gpsclocationserviceexample.position;
 
 import android.app.IntentService;
 import android.content.Intent;
@@ -7,7 +7,7 @@ import android.util.Log;
 
 import com.google.android.gms.location.LocationClient;
 
-import it.neagu.locationtestalberto.H;
+import it.neagu.gpsclocationserviceexample.H;
 
 
 public class FusedLocationService extends IntentService {

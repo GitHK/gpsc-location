@@ -1,4 +1,4 @@
-package it.neagu.locationtestalberto.position;
+package it.neagu.gpsclocationserviceexample.position;
 
 
 import android.app.PendingIntent;

@@ -1,4 +1,4 @@
-package it.neagu.locationtestalberto;
+package it.neagu.gpsclocationserviceexample;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
