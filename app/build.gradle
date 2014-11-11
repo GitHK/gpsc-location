@@ -5,7 +5,7 @@ android {
     buildToolsVersion "19.1.0"
 
     defaultConfig {
-        applicationId "it.neagu.locationtestalberto"
+        applicationId "it.neagu.gpsclocationserviceexample"
         minSdkVersion 15
         targetSdkVersion 19
         versionCode 1
